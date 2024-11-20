@@ -1,0 +1,30 @@
+{
+  "name": "genkitx-mongodbvs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@genkit-ai/ai": "^0.9.2",
+    "genkit": "^0.9.2",
+    "mongodb": "*",
+    "@genkit-ai/vertexai": "*"
+  },
+  "devDependencies": {
+    "gts": "^6.0.2",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.7.5"
+  }
+}
